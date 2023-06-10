@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="S8V-Gs-ok5">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign Up View Controller-->
+        <scene sceneID="rsl-05-WGf">
+            <objects>
+                <viewController storyboardIdentifier="SignUp" id="S8V-Gs-ok5" customClass="SignUpViewController" customModule="Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Elc-m8-zZt" customClass="SignUpView" customModule="Project" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="MaY-BM-BCF">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="j6c-kg-zKp">
+                                        <rect key="frame" x="20" y="227" width="353" height="224"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qQl-Qk-228" customClass="SignTextField" customModule="Project" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="353" height="64"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="64" id="WeC-iu-IuO"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="Icon/At"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="email.placeholder.text"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y8F-5L-ls6" customClass="SignTextField" customModule="Project" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="79" width="353" height="64"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="64" id="HFw-DZ-pL8"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="Icon/Lock"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="enterPassword.placeholder.text"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="secureEntry" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ueq-Jk-8hS" customClass="SignTextField" customModule="Project" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="158" width="353" height="66"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="66" id="JFs-e5-AL0"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="Icon/Lock"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="confirmPassword.placeholder.text"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="secureEntry" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZ6-F7-N68">
+                                        <rect key="frame" x="20" y="110" width="353" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="j6c-kg-zKp" firstAttribute="leading" secondItem="Heb-jj-0uM" secondAttribute="leading" constant="20" id="0WX-gh-M0O"/>
+                                    <constraint firstItem="j6c-kg-zKp" firstAttribute="trailing" secondItem="Heb-jj-0uM" secondAttribute="trailing" constant="-20" id="CII-BO-hVZ"/>
+                                    <constraint firstItem="JZ6-F7-N68" firstAttribute="trailing" secondItem="5Ff-Wz-f0L" secondAttribute="trailing" constant="373" id="T40-N8-OZS"/>
+                                    <constraint firstItem="j6c-kg-zKp" firstAttribute="bottom" secondItem="5Ff-Wz-f0L" secondAttribute="bottom" constant="-10" id="Tpm-vY-yBe"/>
+                                    <constraint firstItem="JZ6-F7-N68" firstAttribute="top" secondItem="5Ff-Wz-f0L" secondAttribute="top" constant="110" id="Wot-gI-qwM"/>
+                                    <constraint firstItem="JZ6-F7-N68" firstAttribute="leading" secondItem="5Ff-Wz-f0L" secondAttribute="leading" constant="20" id="jAn-go-Heh"/>
+                                    <constraint firstItem="j6c-kg-zKp" firstAttribute="top" secondItem="JZ6-F7-N68" secondAttribute="bottom" constant="75" id="kmc-NA-nhL"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="5Ff-Wz-f0L"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Heb-jj-0uM"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Kbe-Mv-ldE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="S99-z8-ToQ" appends="YES" id="xLI-sJ-XWf"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="qE5-D4-9wO"/>
+                    <connections>
+                        <outlet property="confirmPasswordTextField" destination="ueq-Jk-8hS" id="4Zf-8L-mxX"/>
+                        <outlet property="emailTextField" destination="qQl-Qk-228" id="1Jc-cs-mwn"/>
+                        <outlet property="label" destination="JZ6-F7-N68" id="NiU-lS-vvM"/>
+                        <outlet property="passwordTextField" destination="Y8F-5L-ls6" id="dlH-aZ-4Wy"/>
+                        <outlet property="scrollView" destination="MaY-BM-BCF" id="cCv-gg-Nht"/>
+                        <outlet property="signUpView" destination="Elc-m8-zZt" id="QUl-yS-dhF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d11-by-K1V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="S99-z8-ToQ">
+                    <connections>
+                        <action selector="backgroundTappen:" destination="S8V-Gs-ok5" id="rCM-9A-lZx"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-973.28244274809151" y="859.85915492957747"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon/At" width="32" height="32"/>
+        <image name="Icon/Lock" width="32" height="32"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

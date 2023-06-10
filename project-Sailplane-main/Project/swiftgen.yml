@@ -1,0 +1,10 @@
+strings:
+    inputs:
+        - Project/ru.lproj/Localizable.strings
+    outputs:
+        templateName: structured-swift5
+        output: Project/Generated/String.swift
+        params:
+            enumName: L10n
+            publicAccess: 1
+            noComments: 0

@@ -1,0 +1,27 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "19J-DR-nSU"; */
+"19J-DR-nSU.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Kd1-oW-8BZ"; */
+"Kd1-oW-8BZ.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "hj8-zW-9y0"; */
+"hj8-zW-9y0.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = "Button"; ObjectID = "mgO-hT-T1P"; */
+"mgO-hT-T1P.configuration.title" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "mgO-hT-T1P"; */
+"mgO-hT-T1P.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Button"; ObjectID = "sdp-8R-997"; */
+"sdp-8R-997.configuration.title" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "sdp-8R-997"; */
+"sdp-8R-997.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Button"; ObjectID = "xmT-7v-BgS"; */
+"xmT-7v-BgS.configuration.title" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "xmT-7v-BgS"; */
+"xmT-7v-BgS.normalTitle" = "Button";

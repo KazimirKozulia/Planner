@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MS5-Fk-6xd">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="oLf-9y-fWp">
+            <objects>
+                <viewController storyboardIdentifier="Login" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MS5-Fk-6xd" customClass="LoginViewController" customModule="Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mf7-E1-sMi" customClass="LoginView" customModule="Project" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kd1-oW-8BZ">
+                                <rect key="frame" x="20" y="159" width="353" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="welcome.label.text"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eiW-WZ-dwS">
+                                <rect key="frame" x="100" y="694" width="193" height="54"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Login with" buttonSize="large">
+                                    <fontDescription key="titleFontDescription" type="italicSystem" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="loginButtonTapped:" destination="MS5-Fk-6xd" eventType="touchUpInside" id="uXM-yV-U4b"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="AJf-OT-pbO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AJf-OT-pbO" firstAttribute="trailing" secondItem="Kd1-oW-8BZ" secondAttribute="trailing" constant="20" id="EIO-PM-Lg0"/>
+                            <constraint firstItem="AJf-OT-pbO" firstAttribute="trailing" secondItem="eiW-WZ-dwS" secondAttribute="trailing" constant="100" id="Vqm-dK-dcv"/>
+                            <constraint firstItem="Kd1-oW-8BZ" firstAttribute="leading" secondItem="AJf-OT-pbO" secondAttribute="leading" constant="20" id="Zh5-O5-Pzs"/>
+                            <constraint firstItem="eiW-WZ-dwS" firstAttribute="leading" secondItem="AJf-OT-pbO" secondAttribute="leading" constant="100" id="hYk-yE-2gl"/>
+                            <constraint firstItem="Kd1-oW-8BZ" firstAttribute="top" secondItem="AJf-OT-pbO" secondAttribute="top" constant="100" id="na9-MU-idg"/>
+                            <constraint firstItem="AJf-OT-pbO" firstAttribute="bottom" secondItem="eiW-WZ-dwS" secondAttribute="bottom" constant="70" id="wLu-Oe-IQf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="W3q-kS-tkg"/>
+                    <connections>
+                        <outlet property="loginButton" destination="eiW-WZ-dwS" id="fnJ-kW-XKT"/>
+                        <outlet property="loginView" destination="Mf7-E1-sMi" id="8Qv-D1-OHy"/>
+                        <outlet property="titleLabel" destination="Kd1-oW-8BZ" id="HU8-An-wzb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8QH-Bc-a7I" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-532.06106870229007" y="70.422535211267615"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
