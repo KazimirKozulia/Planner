@@ -7,8 +7,6 @@
 
 import UIKit
 
-
-
 class NotesViewController: UIViewController {
     
     @IBOutlet
@@ -16,9 +14,6 @@ class NotesViewController: UIViewController {
     
     @IBOutlet
     var tabBar: UITabBarItem!
-    
-//    @IBOutlet
-//    var navItem: UINavigationItem!
     
     private var dataSource: UICollectionViewDiffableDataSource<Section, Note>! = nil
     private var notesCollectionView: UICollectionView! = nil
@@ -46,12 +41,9 @@ class NotesViewController: UIViewController {
         view.addGestureRecognizer(leftSwipe)
         
         goToTheMap.title = L10n.AddToMap.Button.title
-//        (L10n.AddToMap.Button.title, for: .normal)
         
         tabBar.title = L10n.Notes.TabBarItem.title
         
-//        navItem.title = L10n.YourNotes.Label.text
-
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -89,12 +81,13 @@ class NotesViewController: UIViewController {
         present(navVC, animated: true, completion: nil)
     }
 
+    // Настройки представления
     private func createLayout() -> UICollectionViewLayout {
         var config = UICollectionLayoutListConfiguration(appearance: .plain)
         
         config.backgroundColor = .clear
         config.trailingSwipeActionsConfigurationProvider = { indexPath in
-            let deleteAction = UIContextualAction(style: .destructive, title: "Delete") { [weak self] action, view, completion in
+            let deleteAction = UIContextualAction(style: .destructive, title: L10n.ContextualAction.Delete.title) { [weak self] action, view, completion in
                 self?.deleteItem(at: indexPath)
                 completion(true)
             }
@@ -112,6 +105,7 @@ class NotesViewController: UIViewController {
         notesCollectionView.backgroundColor = .clear
     }
     
+    //Настройка источника данных
     private func configureDataSource() {
         let cellRegistration = UICollectionView.CellRegistration<UICollectionViewListCell, Note> { cell, indexPath, note in
             var content = cell.defaultContentConfiguration()
@@ -150,6 +144,7 @@ class NotesViewController: UIViewController {
         dataSource.apply(snapshot, animatingDifferences: true)
     }
     
+    //Методы получения данных из CoreData и для обновления интерфейса 
     private func fetchNotes() {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
         let managedContext = appDelegate.persistentContainer.viewContext
@@ -198,22 +193,23 @@ class NotesViewController: UIViewController {
     }
 }
 
+// Соответствие протоколу UICollectionViewDelegate
 extension NotesViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let note = self.dataSource.itemIdentifier(for: indexPath) else {
             collectionView.deselectItem(at: indexPath, animated: true)
             return
         }
-        
+
         let noteVC = NoteDetailViewController()
         noteVC.note = note
         navigationController?.pushViewController(noteVC, animated: true)
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, canEditItemAt indexPath: IndexPath) -> Bool {
         true
     }
-    
+
 }
 
 extension NotesViewController: AddNoteViewControllerDelegate {

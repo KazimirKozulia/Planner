@@ -16,6 +16,10 @@ public enum L10n {
       public static let text = L10n.tr("Localizable", "ad.label.text", fallback: "(Могла быть ваша реклама)")
     }
   }
+  public enum Add {
+    /// Добавить заметку
+    public static let title = L10n.tr("Localizable", "add.title", fallback: "Добавить заметку")
+  }
   public enum AddToMap {
     public enum Button {
       /// Перейти на карту
@@ -37,6 +41,28 @@ public enum L10n {
       /// Создать аккаунт
       public static let title = L10n.tr("Localizable", "alert.create.title", fallback: "Создать аккаунт")
     }
+    public enum Enter {
+      /// Пожалуйста, введите заголовок и текст заметки
+      public static let message = L10n.tr("Localizable", "alert.enter.message", fallback: "Пожалуйста, введите заголовок и текст заметки")
+      /// Обязательные поля
+      public static let title = L10n.tr("Localizable", "alert.enter.title", fallback: "Обязательные поля")
+    }
+    public enum Ok {
+      /// Хорошо
+      public static let title = L10n.tr("Localizable", "alert.ok.title", fallback: "Хорошо")
+    }
+    public enum Save {
+      /// Заметка успешно сохранена
+      public static let message = L10n.tr("Localizable", "alert.save.message", fallback: "Заметка успешно сохранена")
+      /// Заметка сохранена
+      public static let title = L10n.tr("Localizable", "alert.save.title", fallback: "Заметка сохранена")
+    }
+  }
+  public enum BarButtonItem {
+    public enum Save {
+      /// Сохранить
+      public static let title = L10n.tr("Localizable", "barButtonItem.save.title", fallback: "Сохранить")
+    }
   }
   public enum Calendar {
     public enum TabBarItem {
@@ -48,6 +74,12 @@ public enum L10n {
     public enum Placeholder {
       /// Повторите пароль
       public static let text = L10n.tr("Localizable", "confirmPassword.placeholder.text", fallback: "Повторите пароль")
+    }
+  }
+  public enum ContextualAction {
+    public enum Delete {
+      /// Удалить
+      public static let title = L10n.tr("Localizable", "contextualAction.delete.title", fallback: "Удалить")
     }
   }
   public enum Create {
@@ -75,6 +107,12 @@ public enum L10n {
     public enum Placeholder {
       /// Введите пароль
       public static let text = L10n.tr("Localizable", "enterPassword.placeholder.text", fallback: "Введите пароль")
+    }
+  }
+  public enum Field {
+    public enum Placeholder {
+      /// Заголовок
+      public static let title = L10n.tr("Localizable", "field.placeholder.title", fallback: "Заголовок")
     }
   }
   public enum General {
@@ -165,6 +203,12 @@ public enum L10n {
     public enum Label {
       /// Тема
       public static let text = L10n.tr("Localizable", "theme.label.text", fallback: "Тема")
+    }
+  }
+  public enum View {
+    public enum TypeInHere {
+      /// Введите сюда
+      public static let text = L10n.tr("Localizable", "view.typeInHere.text", fallback: "Введите сюда")
     }
   }
   public enum Welcome {

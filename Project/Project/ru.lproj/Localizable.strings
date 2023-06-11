@@ -71,3 +71,24 @@
 "alert.create.label" = "Вы хотите создать новый аккаунт";
 
 "alert.continue.title" = "Продолжить";
+
+"alert.enter.message" = "Пожалуйста, введите заголовок и текст заметки";
+
+"alert.enter.title" = "Обязательные поля";
+
+"alert.ok.title" = "Хорошо";
+
+"alert.save.title" = "Заметка сохранена";
+
+"alert.save.message" = "Заметка успешно сохранена";
+
+"contextualAction.delete.title" = "Удалить";
+
+"field.placeholder.title" = "Заголовок";
+
+"view.typeInHere.text" = "Введите сюда";
+
+"add.title" = "Добавить заметку";
+
+"barButtonItem.save.title" = "Сохранить";
+

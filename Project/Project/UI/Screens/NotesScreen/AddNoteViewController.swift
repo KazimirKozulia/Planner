@@ -17,7 +17,7 @@ class AddNoteViewController: UIViewController {
 
     private var titleField: UITextField = {
         let field = UITextField()
-        field.placeholder = "Title"
+        field.placeholder = L10n.Field.Placeholder.title
         field.textColor = .label
         field.font = UIFont.systemFont(ofSize: 20, weight: .medium)
         return field
@@ -25,7 +25,7 @@ class AddNoteViewController: UIViewController {
     
     private var bodyTextView: UITextView = {
         let view = UITextView()
-        view.text = "Type in here..."
+        view.text = L10n.View.TypeInHere.text
         view.font = UIFont.systemFont(ofSize: 18)
         view.textColor = .placeholderText
         view.clipsToBounds = true
@@ -35,8 +35,8 @@ class AddNoteViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
-        title = "Add Note"
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(didTapSaveButton))
+        title = L10n.Add.title
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: L10n.BarButtonItem.Save.title, style: .done, target: self, action: #selector(didTapSaveButton))
         bodyTextView.delegate = self
         titleField.delegate = self
     }
@@ -53,14 +53,14 @@ class AddNoteViewController: UIViewController {
     private func didTapSaveButton() {
         if titleField.text!.isEmpty || bodyTextView.text.isEmpty {
             let alertController = UIAlertController(
-                title: "Fields Required",
-                message: "Please enter a title and body for your note!",
+                title: L10n.Alert.Enter.title,
+                message: L10n.Alert.Enter.message,
                 preferredStyle: .alert
             )
-            
-            let cancelAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+
+            let cancelAction = UIAlertAction(title: L10n.Alert.Ok.title, style: .cancel, handler: nil)
             alertController.addAction(cancelAction)
-            
+
             present(alertController, animated: true)
             return
         }
@@ -76,8 +76,8 @@ class AddNoteViewController: UIViewController {
         
         do {
             try managedContext.save()
-            let alertController = UIAlertController(title: "Note Saved", message: "Note has been saved successfully!", preferredStyle: .alert)
-            let cancelAction = UIAlertAction(title: "Ok", style: .cancel) { [weak self] _ in
+            let alertController = UIAlertController(title: L10n.Alert.Save.title, message: L10n.Alert.Save.message, preferredStyle: .alert)
+            let cancelAction = UIAlertAction(title: L10n.Alert.Ok.title, style: .cancel) { [weak self] _ in
                 guard let self = self else { return }
                 self.delegate?.didFinishAddingNote()
                 self.dismiss(animated: true) {
@@ -108,7 +108,7 @@ extension AddNoteViewController: UITextFieldDelegate, UITextViewDelegate {
     }
     
     func textViewDidBeginEditing(_ textView: UITextView) {
-        if textView == bodyTextView && bodyTextView.text == "Type in here..." {
+        if textView == bodyTextView && bodyTextView.text == L10n.View.TypeInHere.text{
             textView.text = ""
             bodyTextView.textColor = .label
         }
@@ -116,7 +116,7 @@ extension AddNoteViewController: UITextFieldDelegate, UITextViewDelegate {
     
     func textViewDidEndEditing(_ textView: UITextView) {
         if textView == bodyTextView && bodyTextView.text.isEmpty {
-            textView.text = "Type in here..."
+            textView.text = L10n.View.TypeInHere.text
             bodyTextView.textColor = .placeholderText
         }
     }

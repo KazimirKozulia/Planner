@@ -32,12 +32,12 @@ class SettingViewController: UIViewController {
         configureTitle(label: settingView.settingLabel, colorLetter: L10n.Settings.Label.firstLetter, mainText: L10n.Settings.Label.halfText)
         
         settingView.didTapLogout = {
-            do {
-                try FirebaseAuth.Auth.auth().signOut()
-            }
-            catch {
-                print("")
-            }
+//            do {
+//                try FirebaseAuth.Auth.auth().signOut()
+//            }
+//            catch {
+//                print("An error occurred")
+//            }
             
             let loginScreen = UIStoryboard(name: "Login", bundle: .main).instantiateInitialViewController()
             self.navigationController?.setViewControllers([loginScreen!], animated: true)       }

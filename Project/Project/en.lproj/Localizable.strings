@@ -71,3 +71,25 @@
 "alert.create.label" = "Would you like to create an account";
 
 "alert.continue.title" = "Continue";
+
+"alert.enter.message" = "Please enter a title and body for your note";
+
+"alert.enter.title" = "Fields Required";
+
+"alert.ok.title" = "Ok";
+
+"alert.save.title" = "Note Saved";
+
+"alert.save.message" = "Note has been saved successfully";
+
+"contextualAction.delete.title" = "Delete";
+
+"field.placeholder.title" = "Title";
+
+"view.typeInHere.text" = "Type in here";
+
+"add.title" = "Add Note";
+
+"barButtonItem.save.title" = "Save";
+
+
