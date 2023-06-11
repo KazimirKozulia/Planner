@@ -38,7 +38,6 @@
 		E65FE4E429C9FFD800F4D4B9 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E65FE4E329C9FFD800F4D4B9 /* SignUp.storyboard */; };
 		E65FE4EA29CA173600F4D4B9 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65FE4E929CA173600F4D4B9 /* SettingView.swift */; };
 		E65FE4F029CA282800F4D4B9 /* Notes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E65FE4EF29CA282800F4D4B9 /* Notes.storyboard */; };
-		E664E24729DC8F1E0055729F /* NoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E664E24629DC8F1E0055729F /* NoteDetailViewController.swift */; };
 		E669196F29C8DFA800EBB618 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E669197129C8DFA800EBB618 /* Login.storyboard */; };
 		E66DBFB529CCC131004EA62A /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E66DBFB429CCC131004EA62A /* Setting.storyboard */; };
 		E66DBFB729CCC135004EA62A /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66DBFB629CCC135004EA62A /* SettingViewController.swift */; };
@@ -95,7 +94,6 @@
 		E65FE4E329C9FFD800F4D4B9 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		E65FE4E929CA173600F4D4B9 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		E65FE4EF29CA282800F4D4B9 /* Notes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notes.storyboard; sourceTree = "<group>"; };
-		E664E24629DC8F1E0055729F /* NoteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailViewController.swift; sourceTree = "<group>"; };
 		E669197029C8DFA800EBB618 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		E66DBFB429CCC131004EA62A /* Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Setting.storyboard; path = Project/UI/SettingScreen/Setting.storyboard; sourceTree = SOURCE_ROOT; };
 		E66DBFB629CCC135004EA62A /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingViewController.swift; path = Project/UI/SettingScreen/SettingViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -203,7 +201,6 @@
 			children = (
 				E65FE4EF29CA282800F4D4B9 /* Notes.storyboard */,
 				E68616B429C63AC70033489E /* NotesViewController.swift */,
-				E664E24629DC8F1E0055729F /* NoteDetailViewController.swift */,
 				E6A5F7062A25112100358EBA /* AddNoteViewController.swift */,
 			);
 			path = NotesScreen;
@@ -501,7 +498,6 @@
 				E66DBFBF29CCD8CA004EA62A /* Color+DarkLightStyle.swift in Sources */,
 				E6A6549829A9278D00A389E8 /* AppDelegate.swift in Sources */,
 				E6A654AE29A92A5100A389E8 /* LoginView.swift in Sources */,
-				E664E24729DC8F1E0055729F /* NoteDetailViewController.swift in Sources */,
 				E6098B4129C72898002E6365 /* MapViewController.swift in Sources */,
 				E65FE4EA29CA173600F4D4B9 /* SettingView.swift in Sources */,
 				E6425BE42A1FC32C00661A4C /* Notes.xcdatamodeld in Sources */,

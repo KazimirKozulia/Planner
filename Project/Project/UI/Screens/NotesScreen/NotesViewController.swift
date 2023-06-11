@@ -101,7 +101,6 @@ class NotesViewController: UIViewController {
         notesCollectionView = UICollectionView(frame: view.bounds, collectionViewLayout: createLayout())
         notesCollectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         view.addSubview(notesCollectionView)
-        notesCollectionView.delegate = self
         notesCollectionView.backgroundColor = .clear
     }
     
@@ -191,25 +190,6 @@ class NotesViewController: UIViewController {
             fatalError("\(error.userInfo)")
         }
     }
-}
-
-// Соответствие протоколу UICollectionViewDelegate
-extension NotesViewController: UICollectionViewDelegate {
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard let note = self.dataSource.itemIdentifier(for: indexPath) else {
-            collectionView.deselectItem(at: indexPath, animated: true)
-            return
-        }
-
-        let noteVC = NoteDetailViewController()
-        noteVC.note = note
-        navigationController?.pushViewController(noteVC, animated: true)
-    }
-
-    func collectionView(_ collectionView: UICollectionView, canEditItemAt indexPath: IndexPath) -> Bool {
-        true
-    }
-
 }
 
 extension NotesViewController: AddNoteViewControllerDelegate {
