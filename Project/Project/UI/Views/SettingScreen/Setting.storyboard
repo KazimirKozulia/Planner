@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Setting-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="Setting" id="Y6W-OH-hqX" customClass="SettingViewController" customModule="Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc" customClass="SettingView" customModule="Project" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="73" translatesAutoresizingMaskIntoConstraints="NO" id="Kj3-EY-gTq">
+                                <rect key="frame" x="41" y="439" width="311" height="55"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon/Telegram" translatesAutoresizingMaskIntoConstraints="NO" id="u52-HQ-91U">
+                                        <rect key="frame" x="0.0" y="0.0" width="55" height="55"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="55" id="Bhv-bf-q29"/>
+                                            <constraint firstAttribute="height" constant="55" id="ryf-FE-bAJ"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="NDU-56-1Pv" appends="YES" id="mpo-mw-jCI"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon/Mail" translatesAutoresizingMaskIntoConstraints="NO" id="xGV-cH-Eig">
+                                        <rect key="frame" x="128" y="0.0" width="55" height="55"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="55" id="6h7-i2-H27"/>
+                                            <constraint firstAttribute="height" constant="55" id="jLx-vV-wc7"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="iPf-En-xcP" appends="YES" id="Djn-R3-Wes"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon/Phone" translatesAutoresizingMaskIntoConstraints="NO" id="W0T-wF-dvQ">
+                                        <rect key="frame" x="256" y="0.0" width="55" height="55"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="55" id="cER-LV-Bhf"/>
+                                            <constraint firstAttribute="height" constant="55" id="u8a-Bs-6q6"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="OZQ-8D-OEf" appends="YES" id="Hzd-M0-8DE"/>
+                                        </connections>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Kj3-EY-gTq" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="380" id="GJw-vr-FQz"/>
+                            <constraint firstItem="Kj3-EY-gTq" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="41" id="KaI-1v-sJk"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Kj3-EY-gTq" secondAttribute="trailing" constant="41" id="XZh-8W-F0x"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Setting" image="gearshape" catalog="system" selectedImage="gearshape" id="5uV-3l-8TD"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="settingView" destination="5EZ-qb-Rvc" id="nd2-Hj-4Qv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="NDU-56-1Pv"/>
+                <tapGestureRecognizer id="iPf-En-xcP"/>
+                <tapGestureRecognizer id="OZQ-8D-OEf"/>
+            </objects>
+            <point key="canvasLocation" x="52.671755725190835" y="21.83098591549296"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon/Mail" width="256" height="256"/>
+        <image name="Icon/Phone" width="256" height="256"/>
+        <image name="Icon/Telegram" width="256" height="256"/>
+        <image name="gearshape" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

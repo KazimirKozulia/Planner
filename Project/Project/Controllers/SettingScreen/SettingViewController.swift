@@ -10,9 +10,6 @@ import UIKit
 class SettingViewController: UIViewController {
     
     @IBOutlet
-    var tabBar: UITabBarItem!
-    
-    @IBOutlet
     var settingView: SettingView!
     
     override func viewDidLoad() {
@@ -32,12 +29,12 @@ class SettingViewController: UIViewController {
         configureTitle(label: settingView.settingLabel, colorLetter: L10n.Settings.Label.firstLetter, mainText: L10n.Settings.Label.halfText)
         
         settingView.didTapLogout = {
-//            do {
-//                try FirebaseAuth.Auth.auth().signOut()
-//            }
-//            catch {
-//                print("An error occurred")
-//            }
+            do {
+                try FirebaseAuth.Auth.auth().signOut()
+            }
+            catch {
+                print("An error occurred")
+            }
             
             let loginScreen = UIStoryboard(name: "Login", bundle: .main).instantiateInitialViewController()
             self.navigationController?.setViewControllers([loginScreen!], animated: true)       }

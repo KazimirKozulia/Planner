@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SignTextField: UIView{
+class SignTextField: UIView {
     private let backgroundView: UIView = UIView(frame: .zero)
     private let imageView: UIImageView = UIImageView(frame: .zero)
     let textField: UITextField = UITextField(frame: .zero)

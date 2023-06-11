@@ -1,11 +1,10 @@
 //
-//  View.swift
+//  View+SubViewsFrame.swift
 //  Project
 //
-//  Created by Ghost on 29.05.23.
+//  Created by Ghost on 12.06.23.
 //
 
-import Foundation
 import UIKit
 
 extension UIView {
@@ -32,11 +31,5 @@ extension UIView {
     
     var bottom: CGFloat {
         top + height
-    }
-    
-    func addSubViews(views: UIView...) {
-        for view in views {
-            self.addSubview(view)
-        }
     }
 }

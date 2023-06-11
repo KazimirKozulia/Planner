@@ -27,10 +27,6 @@ class LoginView: UIView {
         super.awakeFromNib()
         setupView()
     }
-    
-    func signInButtonTapped() {
-        
-    }
         
     private func setupView() {
 

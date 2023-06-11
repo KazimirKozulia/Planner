@@ -28,6 +28,9 @@
 		E61824F429C4BC4900B20E6A /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E61824EC29C4B9E600B20E6A /* Roboto-Thin.ttf */; };
 		E61824F629C4C67F00B20E6A /* HomeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E61824F529C4C67F00B20E6A /* HomeScreen.storyboard */; };
 		E62AA7702A121D690028BBF2 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62AA76F2A121D690028BBF2 /* String.swift */; };
+		E62E06EF2A3678F700FF1DDB /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62E06EE2A3678F600FF1DDB /* SettingViewController.swift */; };
+		E62E06F22A36803A00FF1DDB /* View+SubViewsFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62E06F12A36803A00FF1DDB /* View+SubViewsFrame.swift */; };
+		E62E06F52A36849300FF1DDB /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E62E06F42A36849300FF1DDB /* Setting.storyboard */; };
 		E63061CC29C7A490004B37AC /* ViewController+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63061CB29C7A490004B37AC /* ViewController+Style.swift */; };
 		E63061D029C7AB0B004B37AC /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63061CF29C7AB0B004B37AC /* SignUpView.swift */; };
 		E6425BE42A1FC32C00661A4C /* Notes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E6425BE22A1FC32C00661A4C /* Notes.xcdatamodeld */; };
@@ -39,15 +42,13 @@
 		E65FE4EA29CA173600F4D4B9 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65FE4E929CA173600F4D4B9 /* SettingView.swift */; };
 		E65FE4F029CA282800F4D4B9 /* Notes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E65FE4EF29CA282800F4D4B9 /* Notes.storyboard */; };
 		E669196F29C8DFA800EBB618 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E669197129C8DFA800EBB618 /* Login.storyboard */; };
-		E66DBFB529CCC131004EA62A /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E66DBFB429CCC131004EA62A /* Setting.storyboard */; };
-		E66DBFB729CCC135004EA62A /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66DBFB629CCC135004EA62A /* SettingViewController.swift */; };
 		E66DBFBA29CCD155004EA62A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E66DBFBC29CCD155004EA62A /* Localizable.strings */; };
 		E66DBFBF29CCD8CA004EA62A /* Color+DarkLightStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66DBFBE29CCD8CA004EA62A /* Color+DarkLightStyle.swift */; };
 		E67FB02929D1FF1A00980158 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E67FB02829D1FF1A00980158 /* Map.storyboard */; };
 		E68616B529C63AC70033489E /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68616B429C63AC70033489E /* NotesViewController.swift */; };
 		E69CB00929DDB80200BA8F99 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = E69CB00829DDB80200BA8F99 /* FSCalendar */; };
 		E6A5F7072A25112100358EBA /* AddNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A5F7062A25112100358EBA /* AddNoteViewController.swift */; };
-		E6A5F7092A2517B600358EBA /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A5F7082A2517B600358EBA /* View.swift */; };
+		E6A5F7092A2517B600358EBA /* View+LabelTextSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A5F7082A2517B600358EBA /* View+LabelTextSetting.swift */; };
 		E6A6549829A9278D00A389E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A6549729A9278D00A389E8 /* AppDelegate.swift */; };
 		E6A6549A29A9278D00A389E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A6549929A9278D00A389E8 /* SceneDelegate.swift */; };
 		E6A6549C29A9278D00A389E8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A6549B29A9278D00A389E8 /* SignUpViewController.swift */; };
@@ -55,7 +56,6 @@
 		E6A654A129A9278F00A389E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6A654A029A9278F00A389E8 /* Assets.xcassets */; };
 		E6A654A429A9278F00A389E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6A654A229A9278F00A389E8 /* LaunchScreen.storyboard */; };
 		E6A654AE29A92A5100A389E8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A654AD29A92A5100A389E8 /* LoginView.swift */; };
-		E6CD47FD2A18F85800929F30 /* .. in Resources */ = {isa = PBXBuildFile; fileRef = E61B236D2A17D1D700E29706 /* .. */; };
 		E6D3D0F129CB6CC200FCFD94 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D3D0F029CB6CC200FCFD94 /* String+Localized.swift */; };
 		E6ED929629AA694400C94E1F /* SignTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED929529AA694400C94E1F /* SignTextField.swift */; };
 /* End PBXBuildFile section */
@@ -82,8 +82,10 @@
 		E61824ED29C4B9E600B20E6A /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Regular.ttf"; path = "Roboto/Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		E61824EE29C4B9E600B20E6A /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-LightItalic.ttf"; path = "Roboto/Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
 		E61824F529C4C67F00B20E6A /* HomeScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeScreen.storyboard; sourceTree = "<group>"; };
-		E61B236D2A17D1D700E29706 /* .. */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ..; path = ../..; sourceTree = "<group>"; };
 		E62AA76F2A121D690028BBF2 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		E62E06EE2A3678F600FF1DDB /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		E62E06F12A36803A00FF1DDB /* View+SubViewsFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+SubViewsFrame.swift"; sourceTree = "<group>"; };
+		E62E06F42A36849300FF1DDB /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		E63061CB29C7A490004B37AC /* ViewController+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Style.swift"; sourceTree = "<group>"; };
 		E63061CF29C7AB0B004B37AC /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		E6425BE32A1FC32C00661A4C /* Notes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notes.xcdatamodel; sourceTree = "<group>"; };
@@ -95,8 +97,6 @@
 		E65FE4E929CA173600F4D4B9 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		E65FE4EF29CA282800F4D4B9 /* Notes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notes.storyboard; sourceTree = "<group>"; };
 		E669197029C8DFA800EBB618 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
-		E66DBFB429CCC131004EA62A /* Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Setting.storyboard; path = Project/UI/SettingScreen/Setting.storyboard; sourceTree = SOURCE_ROOT; };
-		E66DBFB629CCC135004EA62A /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingViewController.swift; path = Project/UI/SettingScreen/SettingViewController.swift; sourceTree = SOURCE_ROOT; };
 		E66DBFBB29CCD155004EA62A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E66DBFBD29CCD158004EA62A /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E66DBFBE29CCD8CA004EA62A /* Color+DarkLightStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+DarkLightStyle.swift"; sourceTree = "<group>"; };
@@ -104,7 +104,7 @@
 		E68616B429C63AC70033489E /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		E69CB00629DDADB600BA8F99 /* Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6A5F7062A25112100358EBA /* AddNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteViewController.swift; sourceTree = "<group>"; };
-		E6A5F7082A2517B600358EBA /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		E6A5F7082A2517B600358EBA /* View+LabelTextSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+LabelTextSetting.swift"; sourceTree = "<group>"; };
 		E6A6549729A9278D00A389E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6A6549929A9278D00A389E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E6A6549B29A9278D00A389E8 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -145,7 +145,6 @@
 			isa = PBXGroup;
 			children = (
 				E6098B4029C72898002E6365 /* MapViewController.swift */,
-				E67FB02829D1FF1A00980158 /* Map.storyboard */,
 			);
 			path = MapScreen;
 			sourceTree = "<group>";
@@ -169,6 +168,63 @@
 			path = Generated;
 			sourceTree = "<group>";
 		};
+		E62E06E92A36775400FF1DDB /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				E67FB02829D1FF1A00980158 /* Map.storyboard */,
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
+		E62E06EA2A36777A00FF1DDB /* CalendarView */ = {
+			isa = PBXGroup;
+			children = (
+				E64454D729CCBAC3002510AF /* Calendar.storyboard */,
+			);
+			path = CalendarView;
+			sourceTree = "<group>";
+		};
+		E62E06EB2A3677A100FF1DDB /* NotesView */ = {
+			isa = PBXGroup;
+			children = (
+				E65FE4EF29CA282800F4D4B9 /* Notes.storyboard */,
+			);
+			path = NotesView;
+			sourceTree = "<group>";
+		};
+		E62E06EC2A3677D300FF1DDB /* MainStoryboard */ = {
+			isa = PBXGroup;
+			children = (
+				E6A6549D29A9278D00A389E8 /* Main.storyboard */,
+			);
+			path = MainStoryboard;
+			sourceTree = "<group>";
+		};
+		E62E06ED2A3677F200FF1DDB /* HomeStoryboard */ = {
+			isa = PBXGroup;
+			children = (
+				E61824F529C4C67F00B20E6A /* HomeScreen.storyboard */,
+			);
+			path = HomeStoryboard;
+			sourceTree = "<group>";
+		};
+		E62E06F02A367AE500FF1DDB /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				E6A654A229A9278F00A389E8 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		E62E06F62A36873700FF1DDB /* SettingScreen */ = {
+			isa = PBXGroup;
+			children = (
+				E62E06F42A36849300FF1DDB /* Setting.storyboard */,
+				E65FE4E929CA173600F4D4B9 /* SettingView.swift */,
+			);
+			path = SettingScreen;
+			sourceTree = "<group>";
+		};
 		E6425BE52A1FC3DC00661A4C /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,7 +238,6 @@
 			isa = PBXGroup;
 			children = (
 				E64454D529CCBA9E002510AF /* CalendarViewController.swift */,
-				E64454D729CCBAC3002510AF /* Calendar.storyboard */,
 			);
 			path = CalendarScreen;
 			sourceTree = "<group>";
@@ -190,7 +245,6 @@
 		E65FE4F129CB631300F4D4B9 /* SignUpScreen */ = {
 			isa = PBXGroup;
 			children = (
-				E65FE4E329C9FFD800F4D4B9 /* SignUp.storyboard */,
 				E6A6549B29A9278D00A389E8 /* SignUpViewController.swift */,
 			);
 			path = SignUpScreen;
@@ -199,7 +253,6 @@
 		E65FE4F529CB63A200F4D4B9 /* NotesScreen */ = {
 			isa = PBXGroup;
 			children = (
-				E65FE4EF29CA282800F4D4B9 /* Notes.storyboard */,
 				E68616B429C63AC70033489E /* NotesViewController.swift */,
 				E6A5F7062A25112100358EBA /* AddNoteViewController.swift */,
 			);
@@ -209,21 +262,12 @@
 		E66DBFB129CCC10E004EA62A /* SettingsScreen */ = {
 			isa = PBXGroup;
 			children = (
-				E66DBFB629CCC135004EA62A /* SettingViewController.swift */,
-				E66DBFB429CCC131004EA62A /* Setting.storyboard */,
+				E62E06EE2A3678F600FF1DDB /* SettingViewController.swift */,
 			);
-			path = SettingsScreen;
+			name = SettingsScreen;
+			path = SettingScreen;
 			sourceTree = "<group>";
-		};
-		E67F8C5C29CC66F60095ABC7 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				E63061CB29C7A490004B37AC /* ViewController+Style.swift */,
-				E65FE4E129C9F69700F4D4B9 /* View+AdditionElement.swift */,
-				E6A5F7082A2517B600358EBA /* View.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		E67F8C5D29CC67960095ABC7 /* SignTextField */ = {
 			isa = PBXGroup;
@@ -236,6 +280,7 @@
 		E67F8C5E29CC681D0095ABC7 /* LoginView */ = {
 			isa = PBXGroup;
 			children = (
+				E669197129C8DFA800EBB618 /* Login.storyboard */,
 				E6A654AD29A92A5100A389E8 /* LoginView.swift */,
 			);
 			path = LoginView;
@@ -244,39 +289,29 @@
 		E67F8C5F29CC682E0095ABC7 /* SignUpView */ = {
 			isa = PBXGroup;
 			children = (
+				E65FE4E329C9FFD800F4D4B9 /* SignUp.storyboard */,
 				E63061CF29C7AB0B004B37AC /* SignUpView.swift */,
 			);
 			path = SignUpView;
 			sourceTree = "<group>";
 		};
-		E67F8C6129CC68410095ABC7 /* SettingView */ = {
+		E67FB02A29D2125300980158 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E65FE4E929CA173600F4D4B9 /* SettingView.swift */,
-			);
-			path = SettingView;
-			sourceTree = "<group>";
-		};
-		E67FB02A29D2125300980158 /* Screens */ = {
-			isa = PBXGroup;
-			children = (
-				E68616B829C63B7B0033489E /* MainScreen */,
 				E68616B929C63BA10033489E /* LoginScreen */,
 				E65FE4F129CB631300F4D4B9 /* SignUpScreen */,
-				E6D3D0EE29CB652600FCFD94 /* HomeScreen */,
 				E65FE4F529CB63A200F4D4B9 /* NotesScreen */,
 				E64454D429CCBA72002510AF /* CalendarScreen */,
 				E66DBFB129CCC10E004EA62A /* SettingsScreen */,
 				E6098B3F29C72879002E6365 /* MapScreen */,
 			);
-			path = Screens;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		E68616B629C63B1C0033489E /* AppMain */ = {
 			isa = PBXGroup;
 			children = (
 				E6A654A529A9278F00A389E8 /* Info.plist */,
-				E6A654A229A9278F00A389E8 /* LaunchScreen.storyboard */,
 				E61824CE29C2282000B20E6A /* GoogleService-Info.plist */,
 				E6A6549929A9278D00A389E8 /* SceneDelegate.swift */,
 				E6A6549729A9278D00A389E8 /* AppDelegate.swift */,
@@ -287,25 +322,15 @@
 		E68616B729C63B750033489E /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				E67FB02A29D2125300980158 /* Screens */,
 				E68616BA29C63BBE0033489E /* Views */,
 				E6A654A029A9278F00A389E8 /* Assets.xcassets */,
 			);
 			path = UI;
 			sourceTree = "<group>";
 		};
-		E68616B829C63B7B0033489E /* MainScreen */ = {
-			isa = PBXGroup;
-			children = (
-				E6A6549D29A9278D00A389E8 /* Main.storyboard */,
-			);
-			path = MainScreen;
-			sourceTree = "<group>";
-		};
 		E68616B929C63BA10033489E /* LoginScreen */ = {
 			isa = PBXGroup;
 			children = (
-				E669197129C8DFA800EBB618 /* Login.storyboard */,
 				E61824CC29C1F24800B20E6A /* LoginViewController.swift */,
 			);
 			path = LoginScreen;
@@ -314,11 +339,16 @@
 		E68616BA29C63BBE0033489E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E67F8C6129CC68410095ABC7 /* SettingView */,
+				E62E06F62A36873700FF1DDB /* SettingScreen */,
+				E62E06F02A367AE500FF1DDB /* LaunchScreen */,
+				E62E06ED2A3677F200FF1DDB /* HomeStoryboard */,
+				E62E06EC2A3677D300FF1DDB /* MainStoryboard */,
+				E62E06EB2A3677A100FF1DDB /* NotesView */,
+				E62E06EA2A36777A00FF1DDB /* CalendarView */,
+				E62E06E92A36775400FF1DDB /* MapView */,
 				E67F8C5F29CC682E0095ABC7 /* SignUpView */,
 				E67F8C5E29CC681D0095ABC7 /* LoginView */,
 				E67F8C5D29CC67960095ABC7 /* SignTextField */,
-				E67F8C5C29CC66F60095ABC7 /* Extensions */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -334,6 +364,7 @@
 		E6A6549629A9278D00A389E8 /* Project */ = {
 			isa = PBXGroup;
 			children = (
+				E67FB02A29D2125300980158 /* Controllers */,
 				E6425BE52A1FC3DC00661A4C /* CoreData */,
 				E62AA76A2A12100D0028BBF2 /* Generated */,
 				E6D3D0EF29CB655400FCFD94 /* Extensions */,
@@ -341,24 +372,19 @@
 				E68616B729C63B750033489E /* UI */,
 				E61824EA29C4B16C00B20E6A /* Fonts */,
 				E66DBFBC29CCD155004EA62A /* Localizable.strings */,
-				E61B236D2A17D1D700E29706 /* .. */,
 			);
 			path = Project;
-			sourceTree = "<group>";
-		};
-		E6D3D0EE29CB652600FCFD94 /* HomeScreen */ = {
-			isa = PBXGroup;
-			children = (
-				E61824F529C4C67F00B20E6A /* HomeScreen.storyboard */,
-			);
-			path = HomeScreen;
 			sourceTree = "<group>";
 		};
 		E6D3D0EF29CB655400FCFD94 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				E63061CB29C7A490004B37AC /* ViewController+Style.swift */,
+				E65FE4E129C9F69700F4D4B9 /* View+AdditionElement.swift */,
+				E6A5F7082A2517B600358EBA /* View+LabelTextSetting.swift */,
 				E6D3D0F029CB6CC200FCFD94 /* String+Localized.swift */,
 				E66DBFBE29CCD8CA004EA62A /* Color+DarkLightStyle.swift */,
+				E62E06F12A36803A00FF1DDB /* View+SubViewsFrame.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -445,14 +471,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E66DBFBA29CCD155004EA62A /* Localizable.strings in Resources */,
-				E66DBFB529CCC131004EA62A /* Setting.storyboard in Resources */,
 				E65FE4F029CA282800F4D4B9 /* Notes.storyboard in Resources */,
 				E61824CF29C2282000B20E6A /* GoogleService-Info.plist in Resources */,
 				E669196F29C8DFA800EBB618 /* Login.storyboard in Resources */,
 				E64454D829CCBAC3002510AF /* Calendar.storyboard in Resources */,
-				E6CD47FD2A18F85800929F30 /* .. in Resources */,
 				E65FE4E429C9FFD800F4D4B9 /* SignUp.storyboard in Resources */,
 				E61824F229C4BC4300B20E6A /* Roboto-LightItalic.ttf in Resources */,
+				E62E06F52A36849300FF1DDB /* Setting.storyboard in Resources */,
 				E6A654A429A9278F00A389E8 /* LaunchScreen.storyboard in Resources */,
 				E6A654A129A9278F00A389E8 /* Assets.xcassets in Resources */,
 				E67FB02929D1FF1A00980158 /* Map.storyboard in Resources */,
@@ -493,6 +518,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E61824CD29C1F24800B20E6A /* LoginViewController.swift in Sources */,
+				E62E06EF2A3678F700FF1DDB /* SettingViewController.swift in Sources */,
+				E62E06F22A36803A00FF1DDB /* View+SubViewsFrame.swift in Sources */,
 				E64454D629CCBA9E002510AF /* CalendarViewController.swift in Sources */,
 				E6A6549C29A9278D00A389E8 /* SignUpViewController.swift in Sources */,
 				E66DBFBF29CCD8CA004EA62A /* Color+DarkLightStyle.swift in Sources */,
@@ -509,8 +536,7 @@
 				E68616B529C63AC70033489E /* NotesViewController.swift in Sources */,
 				E65FE4E229C9F69700F4D4B9 /* View+AdditionElement.swift in Sources */,
 				E6A5F7072A25112100358EBA /* AddNoteViewController.swift in Sources */,
-				E66DBFB729CCC135004EA62A /* SettingViewController.swift in Sources */,
-				E6A5F7092A2517B600358EBA /* View.swift in Sources */,
+				E6A5F7092A2517B600358EBA /* View+LabelTextSetting.swift in Sources */,
 				E6ED929629AA694400C94E1F /* SignTextField.swift in Sources */,
 				E6A6549A29A9278D00A389E8 /* SceneDelegate.swift in Sources */,
 			);

@@ -8,6 +8,7 @@
 import UIKit
 
 extension UIView {
+    
     func makeDefaultButton(action: UIAction, title: String = "Foobar", borderWidth: Double = 1.0, colorNamed: String = "CyanTextColor", lightBackground: UIColor = .white, darkBackground: UIColor = .darkGray, container: AttributeContainer? = nil) -> UIButton {
         if #available(iOS 15.0, *) {
             var configuration = UIButton.Configuration.borderedProminent()
@@ -36,14 +37,6 @@ extension UIView {
         }
     }
     
-    func makeLabelText(label: UILabel, labelText: String, labelFont: String = "Roboto Bold Italic", labelSize: Int = 25) {
-        let text = NSMutableAttributedString(string: labelText)
-        
-        label.attributedText = text
-        
-        label.font = UIFont(name: labelFont, size: CGFloat(labelSize))
-    }
-    
     func addAndCustomizeLabelConstraints(label: UILabel, leadingConstraint: Double, topConstraint: Double) {
         label.translatesAutoresizingMaskIntoConstraints = false
         addSubview(label)
@@ -52,5 +45,11 @@ extension UIView {
             label.leadingAnchor.constraint(equalTo: leadingAnchor, constant: leadingConstraint),
             label.topAnchor.constraint(equalTo: topAnchor, constant: topConstraint),
         ])
+    }
+    
+    func addSubViews(views: UIView...) {
+        for view in views {
+            self.addSubview(view)
+        }
     }
 }
