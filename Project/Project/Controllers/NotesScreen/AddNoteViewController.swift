@@ -66,6 +66,7 @@ class AddNoteViewController: UIViewController {
             return
         }
         
+        // достать ячейки из базыданных
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
         
         let managedContext = appDelegate.persistentContainer.viewContext

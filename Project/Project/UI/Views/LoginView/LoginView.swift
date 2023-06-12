@@ -8,9 +8,9 @@
 import UIKit
 
 class LoginView: UIView {
+    
     let label: UILabel = UILabel(frame: .zero)
     var didTapSignUp: (() -> Void)?
-    var didTapSignIn: (() -> Void)?
     
     lazy var signUpButton = makeDefaultButton(action: .init(handler: { [weak self] _ in self?.didTapSignUp?() }), title: L10n.SignUp.Button.title)
     

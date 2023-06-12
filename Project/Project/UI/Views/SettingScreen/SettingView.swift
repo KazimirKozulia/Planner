@@ -9,17 +9,12 @@ import UIKit
 @IBDesignable
 class SettingView: UIView {
     
-    @IBOutlet
-    var stackView: UIStackView!
-    
     var didTapLogout: (() -> Void)?
-    
     let themeSwitch: UISwitch = UISwitch(frame: .zero)
     let settingLabel: UILabel = UILabel(frame: .zero)
     let label: UILabel = UILabel(frame: .zero)
     let themeLabel: UILabel = UILabel(frame: .zero)
     let refernceLabel: UILabel = UILabel(frame: .zero)
-    
     var logoutButton: UIButton?
     
     override init(frame: CGRect) {

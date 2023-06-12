@@ -129,11 +129,13 @@ class NotesViewController: UIViewController {
             cell.accessories = [.disclosureIndicator()]
         }
         
+        // Регистрация ячейки
         dataSource = UICollectionViewDiffableDataSource<Section, Note>(collectionView: notesCollectionView) {
             (collectionView: UICollectionView, indexPath: IndexPath, note: Note) -> UICollectionViewCell? in
             return collectionView.dequeueConfiguredReusableCell(using: cellRegistration, for: indexPath, item: note)
         }
         
+        // snapshot - представление данных, при отображении
         var snapshot = NSDiffableDataSourceSnapshot<Section, Note>()
         snapshot.appendSections([.main])
         

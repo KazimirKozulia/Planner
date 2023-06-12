@@ -16,7 +16,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet var emailTextField: SignTextField!
     @IBOutlet var passwordTextField: SignTextField!
     @IBOutlet var confirmPasswordTextField: SignTextField!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -29,26 +29,25 @@ class SignUpViewController: UIViewController {
                   let confirmPassword = self.confirmPasswordTextField.textField.text, !confirmPassword.isEmpty else {
                 return
             }
-                        
-            FirebaseAuth.Auth.auth().signIn(withEmail: email, password: password, completion: {
-                [weak self] result, error in
-                guard let strongSelf = self else {
-//                    let _ = confirmPassword == password
-                    return
-                }
-                
-                guard error == nil else {
-                    strongSelf.showCreateAccount(email: email, password: password)
-                    return
-                }
-    
-            })
             
-            let homeScreen = UIStoryboard(name: "HomeScreen", bundle: .main).instantiateInitialViewController()
-            self.navigationController?.setViewControllers([homeScreen!], animated: true)
-            (homeScreen as? UITabBarController)?.viewControllers?.forEach { $0.loadViewIfNeeded() }
+            if password == confirmPassword {
+                
+                FirebaseAuth.Auth.auth().signIn(withEmail: email, password: password, completion: {
+                    [weak self] result, error in
+                    guard let self else { return }
+                    
+                    guard error == nil else {
+                        self.showCreateAccount(email: email, password: password)
+                        return
+                    }
+                })
+                
+                let homeScreen = UIStoryboard(name: "HomeScreen", bundle: .main).instantiateInitialViewController()
+                self.navigationController?.setViewControllers([homeScreen!], animated: true)
+                (homeScreen as? UITabBarController)?.viewControllers?.forEach { $0.loadViewIfNeeded() }
+            }
         }
-    
+        
         emailTextField.loadView()
         
         backgroundStyle(imageName: "BackgroundImage")
@@ -60,7 +59,7 @@ class SignUpViewController: UIViewController {
                                                name: UIResponder.keyboardWillChangeFrameNotification,
                                                object: nil)
     }
-
+    
     func showCreateAccount(email: String, password: String) {
         let alert = UIAlertController(title: L10n.Alert.Create.title,
                                       message: L10n.Alert.Create.label,
@@ -80,7 +79,7 @@ class SignUpViewController: UIViewController {
                 }
                 
             })
-    
+            
         }))
         
         alert.addAction(UIAlertAction(title: L10n.Alert.Cancel.title,
@@ -95,7 +94,6 @@ class SignUpViewController: UIViewController {
     @IBAction
     func backgroundTappen(_ sender: UITapGestureRecognizer) {
         view.endEditing(false)
-        
     }
     
     @objc
@@ -107,24 +105,22 @@ class SignUpViewController: UIViewController {
         scrollView.contentInset = UIEdgeInsets(top: 0.0, left: 0.0,
                                                bottom: scrollView.frame.maxY - keyboardFrame.minY, right: 0.0)
         
-       let textFields = [emailTextField!, passwordTextField!, confirmPasswordTextField!]
+        let textFields = [emailTextField!, passwordTextField!, confirmPasswordTextField!]
         
         if let firstResponder = textFields
             .first(where: \.isFirstResponder) {
-
+            
             let frame = firstResponder.frame.inset(by: UIEdgeInsets(top: -10,
                                                                     left: -10,
                                                                     bottom: -10,
                                                                     right: -10))
-
+            
             let newOrigin = scrollView.convert(frame.origin, from: firstResponder.superview)
             let newFrame = CGRect(origin: newOrigin, size: frame.size)
-
+            
             scrollView.scrollRectToVisible(newFrame, animated: true)
         }
-        
     }
-    
 }
 
 
