@@ -1,6 +1,6 @@
-# Sailplane App 
+# Planer App 
 
-### _This is a very simple sailplane project!_
+### _This is a very simple planer project!_
 
 # Description
 
