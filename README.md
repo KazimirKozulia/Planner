@@ -1,6 +1,6 @@
-# Planer App 
+# Planner App 
 
-### _This is a very simple planer project!_
+### _This is a very simple planner project!_
 
 # Description
 
